@@ -42,7 +42,7 @@ class Callback {
 
 	#Show callback responses
 	public function getResponse($id) {
-	  		PromisePay::RestClient('get', 'callbacks/' . $callback_id . '/responses' . $id);
+	  		PromisePay::RestClient('get', 'callbacks/' . $callback_id . '/responses/' . $id);
 	    	return PromisePay::getDecodedResponse('callbacks');
 	}
 
